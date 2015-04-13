@@ -19,7 +19,7 @@ This demo simply prints the three figures to Pi terminal screen.
 Requirements:
  -  Smartphone. Android was tested. iPhone expected to be similar. The phone just runs a browser.
  -  Wifi home network with internet. (Internet just to download jquery.)
- -  Two files for the Raspberry Pi:   app.js (the webserver), index.htm (will be fetched by the phone).
+ -  Two files for the Raspberry Pi:   server.js (the webserver), index.htm (will be fetched by the phone).
  -  "node.js" aka node - installed on the Pi.
  -  Two modules downloaded for node:  socket.io  and  node-static
 
@@ -42,7 +42,7 @@ The zip file lower right is easiest. unzip into your folder.
 
 5. START WEBSERVER:  On the Pi, examine the IP address, then start webserver. Run in a terminal:
  -       ifconfig
- -       node app.js
+ -       node server.js
 
 6. PHONE: Start browser. Set address to the Raspberry Pi address on your network, at "port 8080". Eg:
        http://192.168.1.14:8080
