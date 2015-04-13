@@ -35,11 +35,13 @@ This installed node 0.12.1 for me.
        npm install socket.io node-static
 It doesn't seem to matter whether you load the modules locally or global.
 
-4. THE TWO FILES:  Get them from github. The zip file lower right is easiest. unzip into your folder.
+4. THE TWO FILES:  Get them from github.
+        https://github.com/BLavery/PiGyro
+The zip file lower right is easiest. unzip into your folder.
 
 5. START WEBSERVER:  On the Pi, examine the IP address, then start webserver. Run in a terminal:
-       ifconfig
-       node app.js
+ -       ifconfig
+ -       node app.js
 That's it for the PI!
 
 6. PHONE: Start browser. Set address to the Raspberry Pi address on your network, at "port 8080". Eg:
@@ -52,5 +54,6 @@ Move the phone. Changing sensor figures should print on the Pi.
 
 Concept credit:
         https://github.com/shaunuk/picar
+
 Other ref:
         http://www.w3.org/TR/orientation-event/
