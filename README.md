@@ -33,7 +33,7 @@ It will probably only get the 2 files.
 This installed node 0.12.1 for me.
 
 3. MODULES:  Use Node Package Manager (which installed as part of node):
-       npm install socket.io ip node-static
+ -       npm install socket.io ip node-static
 It doesn't seem to matter whether you load the modules locally or global.
 
 4. THE TWO FILES:  Get them from github.
