@@ -42,12 +42,11 @@ The zip file lower right is easiest. unzip into your folder.
 5. START WEBSERVER:  On the Pi, examine the IP address, then start webserver. Run in a terminal:
  -       ifconfig
  -       node app.js
-That's it for the PI!
 
 6. PHONE: Start browser. Set address to the Raspberry Pi address on your network, at "port 8080". Eg:
        http://192.168.1.14:8080
 Press OK to start.
-Again, that's it for starting the phone!
+Again, that's it!
 Move the phone. Changing sensor figures should print on the Pi.
 
 
