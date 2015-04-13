@@ -1,0 +1,55 @@
+<html>
+<head>
+<!-- Fetch jquery for javascript smarts from web, and socket.io from our RPI's node.js project -->
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script src="/socket.io/socket.io.js"></script>
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0;" />
+<script>
+
+//------ Define your variables here
+var socket = io.connect(window.location.hostname+':8080');
+
+
+var nIntervId;
+
+$(function()   // This function is called when the page 1st loads on your phone
+{
+    nIntervId = setInterval(SendToPi ,100);    //send data to the pi at 10Hz
+    window.gyro = 'ready';
+    alert('Press to start ...');
+});
+
+function SendToPi()
+{
+        if (window.gyro == 'ready')   // recursion interlock?
+        {
+            window.gyro = 'notready';
+            socket.emit('fromclient', { alpha: alpha, beta: beta, gamma: gamma } );
+            document.getElementById("compass").innerHTML = alpha;
+            document.getElementById("pitch").innerHTML = beta;
+            document.getElementById("roll").innerHTML = gamma;
+            window.gyro = 'ready';
+        }
+}
+
+// This function is called when the phone orientation changes (often!)
+window.ondeviceorientation = function(event)
+//   refer http://www.w3.org/TR/orientation-event/
+{
+    alpha = 360 - event.alpha;  // compass (yaw)
+    beta = event.beta;        // front up (pitch)
+    gamma = event.gamma;      // left up (roll)
+}
+
+</script>
+
+</head>
+<body bgcolor="teal">
+ <div><font size=7>gyro demo</font></div>
+ <div><font size=3>Sending Phone's<br />Yaw, Pitch and Roll<br />to Server ...</font><br /> <br /></div>
+ <div><font size=4>Compass: <span id="compass"></span></font></div>
+ <div><font size=4>Pitch: <span id="pitch"></span></font></div>
+ <div><font size=4>Roll: <span id="roll"></span></font></div>
+ </body>
+ </head>
+</html>
