@@ -16,11 +16,11 @@ Use the orientation data at the Pi as input for whatever you need.
 This demo simply prints the three figures to Pi terminal screen.
 
 Requirements:
-Smartphone. Android was tested. iPhone expected to be similar. The phone just runs a browser.
-Wifi home network with internet. (Internet just to download jquery.)
-Two files for the Raspberry Pi:   app.js (the webserver), index.htm (will be fetched by the phone).
-"node.js" aka node - installed on the Pi.
-Two modules downloaded for node:  socket.io  and  node-static
+ -  Smartphone. Android was tested. iPhone expected to be similar. The phone just runs a browser.
+ -  Wifi home network with internet. (Internet just to download jquery.)
+ -  Two files for the Raspberry Pi:   app.js (the webserver), index.htm (will be fetched by the phone).
+ -  "node.js" aka node - installed on the Pi.
+ -  Two modules downloaded for node:  socket.io  and  node-static
 
 SETUP:
 
