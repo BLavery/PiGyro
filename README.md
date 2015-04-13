@@ -32,9 +32,8 @@ It will probably only get the 2 files.
        http://node-arm.herokuapp.com/
 This installed node 0.12.1 for me.
 
-3. MODULES:  Use Node Package Manager (which installed as part of node):
+3. MODULES:  Use Node Package Manager (which installed as part of node). It doesn't seem to matter whether you load the modules locally or global.
  -       npm install socket.io ip node-static
-It doesn't seem to matter whether you load the modules locally or global.
 
 4. THE TWO FILES:  Get them from github.
         https://github.com/BLavery/PiGyro
