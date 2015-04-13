@@ -21,7 +21,7 @@ Requirements:
  -  Wifi home network with internet. (Internet just to download jquery.)
  -  Two files for the Raspberry Pi:   server.js (the webserver), index.htm (will be fetched by the phone).
  -  "node.js" aka node - installed on the Pi.
- -  Two modules downloaded for node:  socket.io  and  node-static
+ -  Three modules downloaded for node:  socket.io  and  node-static  and  ip
 
 SETUP:
 
@@ -33,15 +33,14 @@ It will probably only get the 2 files.
 This installed node 0.12.1 for me.
 
 3. MODULES:  Use Node Package Manager (which installed as part of node):
-       npm install socket.io node-static
+       npm install socket.io ip node-static
 It doesn't seem to matter whether you load the modules locally or global.
 
 4. THE TWO FILES:  Get them from github.
         https://github.com/BLavery/PiGyro
 The zip file lower right is easiest. unzip into your folder.
 
-5. START WEBSERVER:  On the Pi, examine the IP address, then start webserver. Run in a terminal:
- -       ifconfig
+5. START WEBSERVER:  On the Pi, start webserver. Run in a terminal:
  -       node server.js
 
 6. PHONE: Start browser. Set address to the Raspberry Pi address on your network, at "port 8080". Eg:
