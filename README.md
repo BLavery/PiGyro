@@ -2,6 +2,7 @@
 V0.5
 
 Using a mobile phone as a Compass / Pitch / Roll sensor to your Raspberry Pi.
+
 Communication: Phone: Home wifi network,   Pi: Home network,    Internet accessability: yes
 
 Modern javascript (running in a browser on the phone) is entitled to ask the
@@ -46,7 +47,7 @@ The zip file lower right is easiest. unzip into your folder.
 6. PHONE: Start browser. Set address to the Raspberry Pi address on your network, at "port 8080". Eg:
        http://192.168.1.14:8080
 Press OK to start.
-Again, that's it!
+That's it!
 Move the phone. Changing sensor figures should print on the Pi.
 
 
