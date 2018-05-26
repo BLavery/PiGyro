@@ -1,6 +1,7 @@
 # PI Gyro
 V0.5
-
+## May 2018 - This is no longer being maintained by the original author.
+## Please feel free to fork, copy, adapt if you find it useable
 Using a mobile phone as a Compass / Pitch / Roll sensor to your Raspberry Pi.
 
 Communication: Phone: Home wifi network,   Pi: Home network,    Internet accessability: yes
